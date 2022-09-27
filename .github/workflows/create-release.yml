@@ -1,0 +1,12 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-release:
+    uses: liquibase/build-logic/.github/workflows/create-release.yml@main
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
