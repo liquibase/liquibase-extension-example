@@ -10,6 +10,5 @@ on:
 
 jobs:
   security-scan:
-    uses: liquibase/build-logic/.github/workflows/synk-nightly.yml@main
-    secrets:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    uses: liquibase/build-logic/.github/workflows/synk-nightly.yml@v0.2.3
+    secrets: inherit
