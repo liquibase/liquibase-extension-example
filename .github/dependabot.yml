@@ -3,11 +3,27 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    open-pull-requests-limit: 50
     schedule:
       interval: "daily"
 
   - package-ecosystem: "maven"
     directory: "/"
+    open-pull-requests-limit: 50
+    labels:
+      - "sdou"
     schedule:
       interval: "daily"
+    pull-request-branch-name:
+      # Separate sections of the branch name with a hyphen
+      # for example, `dependabot-npm_and_yarn-next_js-acorn-6.4.1`
+      separator: "-"
+    registries:
+      - github
 
+registries:
+  github:
+    type: "maven-repository"
+    url: "https://maven.pkg.github.com/"
+    username: "liquibot"
+    password: "${{secrets.LIQUIBOT_PAT_GPM_ACCESS}}"
