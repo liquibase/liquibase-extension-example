@@ -14,8 +14,8 @@
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>Liquibase Extension Exampla</name>
-    <description>Describe your extension here.</description>
+    <name>Liquibase Extension Example</name>
+    <description>Describe your extension here</description>
     <url>https://docs.liquibase.com</url>
 
     <licenses>
