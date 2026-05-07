@@ -35,7 +35,7 @@
     <url>https://github.com/liquibase/liquibase-extension-example</url>
   </scm>
   <properties>
-    <liquibase.version>4.32.0</liquibase.version>
+    <liquibase.version>5.0.2</liquibase.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <sonar.organization>liquibase</sonar.organization>
